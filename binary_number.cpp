@@ -4,22 +4,50 @@ using namespace std;
 
 //decimal to binary
 
-int main(){
+ //binary to decimal
 
-    int ans = 0;
-    int pow = 1;
-    int deci_number  = 6;
+    int binartodeci(int num,int r){
 
-    while(deci_number>0){
+        int ans = 0 ;
+        int pow = 1;
 
-        int r  = deci_number % 2;
-        deci_number = deci_number/2;
-        
-        ans = ans + (r * pow);
+        while(num>0){
 
-        pow = pow * 10;
+            int r = num % 10;
+
+            ans+= (r * pow);
+
+            num = num / 10;
+
+            pow = pow *2;
+
+        }
+
+        return ans;
 
     }
 
-    cout<<ans<<endl;
+int main(){
+
+    // int ans = 0;
+    // int pow = 1;
+    // int deci_number  = 6;
+
+//Decimal to binary
+
+    // while(deci_number>0){
+
+    //     int r  = deci_number % 2;
+    //     deci_number = deci_number/2;
+        
+    //     ans = ans + (r * pow);
+
+    //     pow = pow * 10;
+
+    // }
+  
+
+    // cout<<ans<<endl;
+
+    cout<<binartodeci(1010,2);
 }
