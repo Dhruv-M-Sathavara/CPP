@@ -58,14 +58,3 @@ int reverse (int size){
 
 }
 
-int main(){
-
-    vector<int>vec = {1,2,3,4,69,35,8,9};
-    
-    int size = 8;
-
-    in
-
-    
-
-}
