@@ -78,23 +78,80 @@ int main(){
     //     }
     //     cout<<endl;
     // }
-    int space = 2*(4-1);
-    for(int i = 0 ; i<=4 ;i++){
-        for(int j = 1 ;j<=i ;j++){
-            cout<<j;
-        }
+    // int space = 2*(4-1);
+    // for(int i = 0 ; i<=4 ;i++){
+    //     for(int j = 1 ;j<=i ;j++){
+    //         cout<<j;
+    //     }
 
-        for(int j = 1;j<=space;j++){
+    //     for(int j = 1;j<=space;j++){
+    //         cout<<" ";
+    //     }
+
+    //     for(int j = i;j>=1;j--){
+    //         cout<<j;
+    //     }
+    //     cout<<endl;
+    //     space = space - 2;
+
+    // }
+    
+    int n =5;
+    int i;
+    int j;
+
+    // for(i = 0 ;i<n ;i++){
+    //     for(j = i ; j<n ; j++){
+    //         cout<<"*";
+    //     }
+    //     for(j = i ;j<(i*2);j++){
+    //         cout<<"  ";
+    //     }
+    //     for(j = i ; j<n ; j++){
+    //         cout<<"*";
+    //     }
+        
+    //     cout<<endl;
+    // }
+    // for(i=0;i<n;i++){
+    //     for(j = 0 ; j<=i ; j++){
+    //         cout<<"*";
+    //     }
+    //      for(j=0;j<2*((n-1)-i);j++){
+    //         cout<<" ";
+    //     }
+    //      for(j = 0 ; j<=i ; j++){
+    //         cout<<"*";
+    //     }
+
+      
+    //     cout<<endl;
+    // }
+
+    for(i = 0;i<n;i++){
+        for(j=0;j<=i;j++){
+            cout<<"*";
+        }
+         for(j=0;j<2*((n-1)-i);j++){
             cout<<" ";
         }
+         for(j=0;j<=i;j++){
+            cout<<"*";
+        }
 
-        for(int j = i;j>=1;j--){
-            cout<<j;
+        cout<<endl;
+    }
+    for(i=0;i<n;i++){
+        for(j=i;j<n-1;j++){
+            cout<<"*";
+        }
+        for(j = i ;j<(i*2);j++){
+          cout<<"  ";
+      }
+       for(j=i;j<n-1;j++){
+            cout<<"*";
         }
         cout<<endl;
-        space = space - 2;
-
     }
-    
 
 }
