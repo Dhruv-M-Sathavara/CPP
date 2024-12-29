@@ -96,7 +96,7 @@ int main(){
 
     // }
     
-    int n =5;
+    
     int i;
     int j;
 
@@ -128,30 +128,39 @@ int main(){
     //     cout<<endl;
     // }
 
-    for(i = 0;i<n;i++){
-        for(j=0;j<=i;j++){
-            cout<<"*";
-        }
-         for(j=0;j<2*((n-1)-i);j++){
-            cout<<" ";
-        }
-         for(j=0;j<=i;j++){
-            cout<<"*";
-        }
+    // for(i = 0;i<n;i++){
+    //     for(j=0;j<=i;j++){
+    //         cout<<"*";
+    //     }
+    //      for(j=0;j<2*((n-1)-i);j++){
+    //         cout<<" ";
+    //     }
+    //      for(j=0;j<=i;j++){
+    //         cout<<"*";
+    //     }
 
-        cout<<endl;
-    }
-    for(i=0;i<n;i++){
-        for(j=i;j<n-1;j++){
-            cout<<"*";
-        }
-        for(j = i ;j<(i*2);j++){
-          cout<<"  ";
-      }
-       for(j=i;j<n-1;j++){
-            cout<<"*";
-        }
-        cout<<endl;
-    }
+    //     cout<<endl;
+    // }
+    // for(i=0;i<n;i++){
+    //     for(j=i;j<n-1;j++){
+    //         cout<<"*";
+    //     }
+    //     for(j = i ;j<(i*2);j++){
+    //       cout<<"  ";
+    //   }
+    //    for(j=i;j<n-1;j++){
+    //         cout<<"*";
+    //     }
+    //     cout<<endl;
+    // }
 
+    char n = 'A';
+    for(i = 0;i<4;i++){
+      
+         for(j = 0 ;j<=i;j++){
+        cout<<n;
+        n++;
+         }
+    cout<<endl;
+  }
 }
